@@ -7,6 +7,8 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* HEADER */
+
 .container {
   width: 100%;
   height: 100vh;
@@ -16,7 +18,7 @@ body {
 .header {
   width: 100%;
   height: 60px;
-  background: #f4f4f4;
+  background: rgb(238, 238, 238);
 }
 
 .header-left, .header-right {
@@ -55,13 +57,12 @@ body {
   margin-right: 30px;
   font-size: 20px;
   cursor: pointer;
-  color: #4c4c4c;
+  color: #4b4b4b;;
 }
 
 .header-right .circle-img {
   float: left;
   margin: 7px 20px;
-
 }
 
 .header-right .name-lastaccess {
@@ -85,5 +86,46 @@ body {
   font-size: 20px;
   cursor: pointer;
   margin-right: 30px;
-  color: #4c4c4c;
+  color: #4b4b4b;;
+}
+
+/* MAIN */
+
+.main {
+  width: 100%;
+  height: calc(100% - 60px);
+  background: lightyellow;
+}
+
+.main-left, .main-right {
+  float: left;
+  height: 100%;
+}
+
+.main-left {
+  width: 30%;
+  background: lightblue;
+  border-right: 1px solid #e0e0e0;
+}
+
+.main-right {
+  width: 70%;
+  background: lightcoral;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background: #f7f7f7;
+}
+
+.nav input {
+  width: 94%;
+  height: 70%;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #f6f6f6;
 }
