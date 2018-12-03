@@ -12,7 +12,6 @@ body {
 .container {
   width: 100%;
   height: 100vh;
-  background: lightblue;
 }
 
 .header {
@@ -57,7 +56,7 @@ body {
   margin-right: 30px;
   font-size: 20px;
   cursor: pointer;
-  color: #4b4b4b;;
+  color: #4b4b4b;
 }
 
 .header-right .circle-img {
@@ -94,7 +93,6 @@ body {
 .main {
   width: 100%;
   height: calc(100% - 60px);
-  background: lightyellow;
 }
 
 .main-left, .main-right {
@@ -104,13 +102,11 @@ body {
 
 .main-left {
   width: 30%;
-  background: lightblue;
   border-right: 1px solid #e0e0e0;
 }
 
 .main-right {
   width: 70%;
-  background: lightcoral;
 }
 
 .nav {
@@ -128,4 +124,108 @@ body {
   background-color: #fff;
   border-radius: 5px;
   border: 1px solid #f6f6f6;
+}
+
+/* CONTACTS */
+
+.contacts {
+  width: 100%;
+  height: calc(100% - 50px);
+  overflow: scroll;
+}
+
+.contacts li {
+  width: 100%;
+  height: 70px;
+  padding: 6px 0;
+}
+
+.contacts li .contacts-left, .contacts li .contacts-right {
+  float: left;
+  height: 70px;
+}
+
+.contacts li .contacts-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18%;
+}
+
+.contacts li .contacts-left .circle-img {
+  height: 50px;
+  width: 50px;
+  margin: 0;
+}
+
+.contacts li .contacts-left .circle-img img{
+  height: 50px;
+}
+
+.contacts li .contacts-right {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  width: 82%;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.contacts li .contacts-right span:first-child {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.contacts li .contacts-right span:last-child {
+  color: #7a7a7a;
+}
+
+.contacts li .contacts-right span i {
+  font-size: 13px;
+  margin-right: 4px;
+  color: #7a7a7a;
+}
+
+.contacts li .contacts-right .lastaccess {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 13px;
+  color: #7a7a7a;
+}
+
+.main-right .main-up {
+  width: 100%;
+  height: 92%;
+  background: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+  background-repeat: repeat;
+  background-size: 400px;
+}
+
+.main-right .main-down {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 8%;
+  background: rgb(238, 238, 238);
+}
+
+.main-right .main-down i {
+  font-size: 25px;
+  color: #7a7a7a;
+  cursor: pointer;
+}
+
+.main-right .main-down i:last-child {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.main-right .main-down input {
+  width: 87%;
+  height: 70%;
+  background-color: #fff;
+  border-radius: 30px;
+  border: 1px;
 }
