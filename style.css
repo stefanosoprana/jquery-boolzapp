@@ -9,6 +9,10 @@ body {
 
 /* HEADER */
 
+.clear {
+  clear: both;
+}
+
 .container {
   width: 100%;
   height: 100vh;
@@ -110,6 +114,7 @@ body {
   background: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
   background-repeat: repeat;
   background-size: 400px;
+  padding-top: 20px;
 }
 
 .nav {
@@ -232,27 +237,32 @@ body {
   border: 1px;
 }
 
-.space-message-user, .space-message-bot {
-  width: 100%;
-  height: 40px;
-}
-
-.message-user {
-  /* display: none; */
-  float: right;
-  background: #e1f6ca;
+.message {
+  position: relative;
+  margin: 10px 0;
   padding: 7px;
-  margin: 5px 0;
   border-radius: 10px;
-  font-size: 15px;
+  max-width: 60%;
+  min-width: 20%;
 }
 
-.message-bot{
-  display: none;
-  float: left;
+.message span:last-child {
+  position: absolute;
+  right: 7px;
+  bottom: 5px;
+  font-size: 10px;
+  color: #B6B9BB;
+}
+
+.message.received {
   background: white;
-  padding: 7px;
-  margin: 5px 0;
-  border-radius: 10px;
-  font-size: 15px;
+}
+
+.message.sent {
+  background: #D5F9BA;
+  float: right;
+}
+
+.template {
+  display: none;
 }
