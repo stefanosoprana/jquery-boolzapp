@@ -5,41 +5,30 @@ $(document).ready(function(){
     if (event.which == 13) {
 
       var newMessageValue = $('#newMessage').val();
-      var newmessageTemplate = $('.template .message');
+      var newmessageTemplate = $('.template .message.sent');
       var clearTemplate = $('.template .clear')
+
 
       newmessageTemplate.text(newMessageValue)
 
       $('.main-up').append(newmessageTemplate);
       $('.main-up').append(clearTemplate);
 
+
+      setTimeout(countDown, 1000);
+      function countDown() {
+
+        var newmessageTemplateBot = $('.template .message.received');
+        var clearTemplateBot = $('.template .clearBot')
+        newmessageTemplateBot.text('ok')
+        $('.main-up').append(newmessageTemplateBot);
+        $('.main-up').append(clearTemplateBot);
+
+      }
+      
       $('#newMessage').val('');
+
+
     }
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// $('.fa-chevron-right').click(function(){
-//
-//   $('.main-up .message-user').addClass('active')
-//
-//   var text = $('.main-down input').val();
-//
-//   var newMessage = $('.message-user-toClone .content-message').clone();
-//
-//   newMessage.text(text);
-//
-//   $('.main-up .message-user').append(newMessage)
-// });
