@@ -5,29 +5,26 @@ $(document).ready(function(){
     if (event.which == 13) {
 
       var newMessageValue = $('#newMessage').val();
-      var newmessageTemplate = $('.template .message.sent');
-      var clearTemplate = $('.template .clear')
+      var newmessageTemplate = $('.template .message.sent').clone();
+      var clearTemplate = $('.template .clear').clone();
 
-
-      newmessageTemplate.text(newMessageValue)
+      newmessageTemplate.text(newMessageValue);
 
       $('.main-up').append(newmessageTemplate);
       $('.main-up').append(clearTemplate);
 
-
       setTimeout(countDown, 1000);
       function countDown() {
 
-        var newmessageTemplateBot = $('.template .message.received');
-        var clearTemplateBot = $('.template .clearBot')
-        newmessageTemplateBot.text('ok')
+        var newmessageTemplateBot = $('.template .message.received').clone();
+        var clearTemplateBot = $('.template .clearBot').clone();
+        newmessageTemplateBot.text('ok');
         $('.main-up').append(newmessageTemplateBot);
         $('.main-up').append(clearTemplateBot);
 
       }
-      
-      $('#newMessage').val('');
 
+      $('#newMessage').val('');
 
     }
   });
