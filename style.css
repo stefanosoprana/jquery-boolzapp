@@ -13,10 +13,6 @@ body {
   clear: both;
 }
 
-.clearBot {
-  clear: both;
-}
-
 .container {
   width: 100%;
   height: 100vh;
@@ -150,7 +146,18 @@ body {
   width: 100%;
   height: 70px;
   padding: 6px 0;
+  cursor: pointer;
 }
+
+.contacts li:hover .contacts-left {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+
+.contacts li:hover .contacts-left , .contacts li:hover  .contacts-right {
+  background: lightgrey;
+}
+
 
 .contacts li .contacts-left, .contacts li .contacts-right {
   float: left;
